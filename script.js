@@ -17,9 +17,11 @@ function gridMap(a){
 }
 
 function gridSize(){
+    let size2 = size
     size = prompt("Enter grid size","16")
     if (size>100 || size<=0){
         alert('Invalid Size')
+        size= size2;
     } else{
         button.textContent="Grid Size:"+ size;
         mainBody.textContent='';
